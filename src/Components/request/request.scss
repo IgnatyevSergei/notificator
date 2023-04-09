@@ -1,0 +1,12 @@
+.request-btn{
+  height: 50px;
+  width: 130px;
+  border-radius: 10px;
+  font-size: 18px;
+
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+

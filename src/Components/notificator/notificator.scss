@@ -1,0 +1,56 @@
+
+.wrapper {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 400px;
+  height: 130px;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: -3px -3px 10px gray ;
+  animation: advent-notification ease 1s;
+
+
+  &:hover{
+    opacity: 1;
+    box-shadow: none;
+  }
+}
+
+.close {
+  height: 20%;
+  font-size: 18px;
+  color: black;
+  align-self: flex-end;
+
+  background-color: transparent;
+  border: none;
+  padding: 10px 10px 20px 0;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.notificator-content {
+  color: black;
+  height: 80%;
+  padding-left: 10px;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+}
+
+@keyframes advent-notification {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
